@@ -1,0 +1,17 @@
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+    transition: opacity 0.3s ease;
+  }
+  
+  .visible {
+    opacity: 1;
+    background-color: aqua;
+  }
+  

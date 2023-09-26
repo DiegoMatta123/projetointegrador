@@ -1,0 +1,61 @@
+<app-menu></app-menu>
+<div class="cover-image">
+  <img src="assets/logo6.png" alt="Imagem de Capa" />
+</div>
+
+<div class="all">
+  <h1>Camisas em Destaque</h1>
+
+
+  <div class="container" *ngFor="let camisa of camisas">
+    <img [src]="camisa.imagemUrl" alt="{{ camisa.nome }}" />
+    <h3>{{ camisa.nome }}</h3>
+    <p>Preço: R$ {{ camisa.preco }}</p>
+    <button (click)="adicionarAoCarrinho(camisa)">Adicionar ao Carrinho</button>
+  </div>
+  </div>
+  <br><br>
+
+  <div class="see-all-shirts">
+  <div class="frase">
+    Clique aqui para ver todas as opções
+  </div>
+ 
+    <br>
+    <a routerLink="/camisas">Ver Todas</a>
+  </div>
+  <br>
+  <br><br><br>
+
+
+  <h1>Álbuns em Destaque</h1>
+  
+    <div class="container" *ngFor="let album of albums">
+      <img [src]="album.imagemUrl" alt="{{ album.nome }}" />
+      <h3>{{ album.nome }}</h3>
+      <p>Preço: R$ {{ album.preco }}</p>
+      <button (click)="adicionarAoCarrinho(album)">Adicionar ao Carrinho</button>
+    </div>
+  
+    <div class="see-all-albuns">
+      <div class="frase">
+      Clique aqui para ver todas as opções
+    </div>
+    <br>
+      <a routerLink="/albuns">Ver Todos</a>
+    </div>
+    <br>
+    <br>
+
+
+
+
+
+  
+<app-footer></app-footer>
+
+  
+   
+    
+
+

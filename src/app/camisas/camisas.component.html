@@ -1,0 +1,14 @@
+<app-menu></app-menu>
+<div class="all">
+<h1>Compre aqui a camisa da sua banda favorita pelo melhor preço</h1>
+<div>
+    <div class="container" *ngFor="let camisa of camisas">
+        <img [src]="camisa.imagemUrl" alt="{{ camisa.nome }}" />
+        <h3>{{ camisa.nome }}</h3>
+        <p>Preço: R$ {{ camisa.preco }}</p>
+        <button (click)="adicionarAoCarrinho(camisa)">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>
+

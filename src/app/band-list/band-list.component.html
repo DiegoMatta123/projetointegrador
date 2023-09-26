@@ -1,0 +1,44 @@
+
+
+  
+<app-menu></app-menu>
+
+<br>
+
+<p>Conheça a história da sua banda favorita</p>
+
+
+<br>
+
+<h2>Pesquise pela primeira letra da banda que você está procurando</h2>
+    
+
+
+    
+   
+<div>
+  <input type="text" (input)="onSearchInput($event)" placeholder="Digite uma letra">
+  <ul>
+    <li *ngFor="let band of filteredBands">
+      <div class="band-info">
+        <span>{{ band.name }}</span>
+        <button (click)="toggleMessage(band)">{{ band.showTextBox ? 'Parar de exibir' : 'Mostrar mensagem' }}</button>
+      </div>
+      <div *ngIf="band.showTextBox" class="message-box">
+        {{ band.message }}
+      </div>
+    </li>
+  </ul>
+</div>
+
+  
+  
+  
+  
+
+  <app-footer></app-footer>
+  
+
+
+  
+  

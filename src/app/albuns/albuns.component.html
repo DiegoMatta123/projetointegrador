@@ -1,0 +1,15 @@
+<app-menu></app-menu>
+<h1>Compre aqui o álbum da sua banda favorita pelo melhor preço</h1>
+
+<div>
+    <div class="container" *ngFor="let album of albuns">
+        <img [src]="album.imagemUrl" alt="{{ album.nome }}" />
+        <h3>{{ album.nome }}</h3>
+        <p>Preço: R$ {{ album.preco }}</p>
+        <button (click)="adicionarAoCarrinho(album)">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+<app-footer></app-footer>
+    
+

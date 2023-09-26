@@ -1,0 +1,117 @@
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 250px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #f39c12;
+}
+
+h1{
+    color: #f9f9f9;
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 10;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #333; /* Ajusta a cor da borda para contraste */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #222; /* Define a cor de fundo dos itens da lista */
+    color: #f9f9f9;
+  }
+  
+  .band-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Estilo para o botão "Mostrar mensagem" */
+  li button {
+    background-color: #01a619;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-end;
+  }
+  
+  li button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Estilos para as caixas de mensagem */
+  .message-box {
+    background-color: #333; /* Define a cor de fundo das caixas de mensagem */
+    border: 1px solid #555; /* Ajusta a cor da borda para contraste */
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  
+  li button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Estilos para as caixas de mensagem */
+  .message-box {
+    background-color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .fundo{
+    background-color: black;
+    
+  }
+
+  p{
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    text-align: center;
+  }
+  
+  
+  
+  h2{
+    color: rgb(255, 255, 255);
+  }
+  
